@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth; /*transicion mas suave a los enlaces*/
+}
+
+body {
+  font-family: "Playfair Display";
+  background-color: #1f1e1e;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*  display: flex; estas propiedades las pondremos en header_contenedor
+    flex-direction: column;
+    align-items: center;*/
+}
+
+.menu {
+  width: 100%;
+  /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #ce487b;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+  /*position: relative;
+    float: left;*/
+}
+
+.menu .navbar ul li a {
+  text-decoration: none;
+  font-size: 23px;
+  padding: 30px 20px 10px;
+  color: #ffff;
+  /* display: flex;*/
+}
+.fa-bars {
+  visibility: hidden;
+}
+.fa-square-instagram {
+  color: #ece0e0;
+  cursor: pointer;
+  /*al pasar el cursor cambia*/
+  font-size: 40px;
+}
+
+.menu .navbar ul li a:hover {
+  color: #ce487d;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.header-tex {
+  margin: 100px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header-tex h1,
+span,
+h3 {
+  font-size: 70px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "playfair display";
+  color: #c5357d;
+  /*margin-bottom: 25px;*/
+}
+
+.header-tex span {
+  font-size: 35px;
+}
+
+.header-tex p {
+  color: #afafaf;
+  padding: 0 120px;
+  /* margin: 50px 0;*/
+}
+
+.header-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-1 {
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #c5357d;
+  color: #fcfafa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  margin: 10px 0 10px;
+}
+.header-direct {
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+.direct h3 {
+  font-size: 20px;
+}
+
+.direct p {
+  font-size: 22px;
+  color: #e9e2e2;
+  text-transform: uppercase;
+}
+
+.Bienvenidos {
+  height: 100vh;
+  display: flex;
+}
+
+.Bienvenidos-1 {
+  background-image: url(logo.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.Bienvenidos-2 {
+  width: 50%;
+  /*  padding: 150px 250px 150px 100px;*/
+  background-color: #ca9494;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 150px 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 50px;
+  background-color: linear-gradient(
+    111.4deg,
+    rgba(238, 113, 113, 1) 1%,
+    rgba(246, 215, 148, 1) 58%
+  );
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ebe1e1;
+  margin: 25px 0;
+}
+
+.b1 {
+  font-size: 15px;
+  color: rgb(161, 18, 73);
+}
+
+.servicios .contenedor {
+  color: #ce487b;
+}
+
+.servicios {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.servicios-1 ul {
+  background-image: #ece0e0;
+}
+
+.servicios-tex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+hr {
+  border: 1px solid #ce487b;
+  width: 80px;
+}
+
+.servicios-tex p {
+  padding: 50p;
+}
+
+.servicios-gruop {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0;
+}
+
+.servicios-1 {
+  background-color: #191919;
+  padding: 35px 25px;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+.servicios-1 img {
+  width: 25px;
+  margin-bottom: 15px;
+}
+
+.servicios-1 h3 {
+  font-size: 25px;
+  color: #faf5f5;
+}
+
+.servicios-1 a {
+  color: #c5357d;
+  font-size: 16px;
+}
+
+.Precios {
+  height: 100vh;
+  display: flex;
+}
+
+.Precios h2 {
+  margin-bottom: 2px;
+
+  font-size: 30px;
+  color: #ca9494;
+}
+
+.Precios-1 {
+  width: 50%;
+  padding: 100px 200px 200px 50px;
+  background-color: hsl(0, 0%, 3%);
+}
+
+table {
+  margin: 10px;
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 5px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #afafaf;
+}
+
+th {
+  color: #ffff;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+
+td {
+  color: #ce487d;
+  font-size: 1.6rem;
+}
+
+.Precios-2 {
+  background-image: url(precios.png);
+  width: 50%;
+}
+
+.footer {
+  height: 120vh;
+  background-image: url(logo.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat t;
+  background-size: cover;
+  text-align: center;
+  padding: 1000px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Trabajos {
+  text-align: center;
+  /*  height: 120vh;
+    border-bottom:2px solid #c5357d;
+   /* display: flex;
+    flex-direction: center;
+    align-items: center;*/
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: 220px 220px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.sobre-text h2,
+h4 {
+  color: #c5357d;
+}
+
+.sobre-text h4 {
+  font-size: 30px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 10px;
+}
+
+.footer-bg {
+  color: #ce487d;
+  margin-top: 100px;
+  text-align: center;
+  border-top: 2px solid palevioletred;
+}
+
+.campo-1 {
+  margin-bottom: 15px;
+}
+
+.campo {
+  margin: 5px;
+  padding: 20px 15px;
+  width: 200px;
+  background-color: #0e0e0e;
+  color: #f3efef;
+  outline: none;
+  border-radius: 10px;
+  color: #ffff;
+  font-size: 10px;
+}
+
+textarea {
+  width: 520px !important;
+}
+
+.footer-tex {
+  text-align: center;
+  padding: 5px;
+  background-color: #ce487d;
+}
+
+@media (max-width: 900px) {
+  .Precios-1 {
+    width: 100%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 680px) {
+  .fa-bars {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    visibility: visible;
+    font-size: 25px;
+    color: #f2ebeb;
+    z-index: 100;
+  }
+
+  .menu_ul {
+    width: 100vw;
+    position: absolute;
+    flex-direction: column;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #ed0791;
+    height: 70%;
+    visibility: hidden;
+  }
+  .menu .navbar ul li a:hover {
+    color: #191919;
+  }
+  .clasemenu {
+    visibility: initial;
+  }
+  .header-tex h1 {
+    font-size: 2.4rem;
+  }
+  .header-direct {
+    margin-top: 20px;
+  }
+  .direct h3,
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    padding: 5px;
+  }
+
+  tbody {
+    font-size: 10px;
+  }
+
+  .header-direct {
+    align-items: center;
+    flex-direction: column;
+  }
+  .Bienvenidos {
+    flex-direction: column;
+  }
+  .Bienvenidos-1 {
+    width: 100%;
+    height: 30%;
+    /*flex-direction: columns;*/
+  }
+  .Bienvenidos-2 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .Precios {
+    height: 70%;
+  }
+  .Precios-1 {
+    width: 100%;
+    padding: 25px;
+  }
+  .Precios-2 {
+    display: none;
+  }
+  .imagenes {
+    grid-template-columns: 250px;
+  }
+}
